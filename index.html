@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldWed</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB; /* Fondo azul claro */
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .logo {
+            width: 150px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+
+        .arrow {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .form {
+            margin: 20px auto;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .form button {
+            padding: 10px 20px;
+            background: #00BFFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background: #1E90FF;
+        }
+
+        .decorations {
+            margin-top: 30px;
+        }
+
+        .decorations img {
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Logo" class="logo">
+        <h1>BIENVENIDO</h1>
+        <p class="arrow">⬇</p>
+        <div class="form">
+            <input id="username" type="text" placeholder="Usuario" required>
+            <input id="password" type="password" placeholder="Contraseña" required>
+            <button onclick="redirectToNewPage()">Ingresar</button>
+        </div>
+        <div class="decorations">
+            <img src="https://via.placeholder.com/100" alt="Decoración 1">
+            <img src="https://via.placeholder.com/100" alt="Decoración 2">
+            <img src="https://via.placeholder.com/100" alt="Decoración 3">
+        </div>
+    </div>
+
+    <script>
+        function redirectToNewPage() {
+            // Redirige a la nueva página
+            window.location.href = "pagina2.html"; // Nombre de la nueva página
+        }
+    </script>
+</body>
+</html>
